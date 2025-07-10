@@ -30,7 +30,7 @@ export default function UsersPage() {
     <main className="min-h-screen p-6 bg-gray-50">
       <h1 className="text-2xl font-bold mb-6 text-center text-blue-800">📋 Danh sách người dùng</h1>
 
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col-reverse md:flex-row gap-6">
         <div className="md:w-1/3 space-y-3">
           {users.map((user) => (
             <div
