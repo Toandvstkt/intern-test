@@ -3,9 +3,20 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+  address: {
+    street: string;
+    city: string;
+  };
+}
+
 export default function UsersPage() {
-  const [users, setUsers] = useState([]);
-  const [selectedUser, setSelectedUser] = useState<any>(null);
+  const [users, setUsers] = useState<User[]>([]);
+  const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const router = useRouter();
 
   useEffect(() => {

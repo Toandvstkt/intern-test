@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-6 mt-4">
         <button
           onClick={() => router.push('/users')}
-          className="flex items-center gap-3 px-6 py-3 bg-blue-600 text-white rounded shadow-md hover:scale-105 hover:bg-blue-700 transition"
+          className="flex items-center gap-3 px-6 py-3 bg-blue-600 text-white rounded shadow-md hover:scale-105 hover:bg-blue-700 transition cursor-pointer"
         >
           <FaUserFriends size={20} />
           Danh sách người dùng
@@ -23,7 +23,7 @@ export default function Home() {
 
         <button
           onClick={() => router.push('/contact')}
-          className="flex items-center gap-3 px-6 py-3 bg-green-600 text-white rounded shadow-md hover:scale-105 hover:bg-green-700 transition"
+          className="flex items-center gap-3 px-6 py-3 bg-green-600 text-white rounded shadow-md hover:scale-105 hover:bg-green-700 transition cursor-pointer"
         >
           <FaEnvelopeOpenText size={20} />
           Liên hệ
